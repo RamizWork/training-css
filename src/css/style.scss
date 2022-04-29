@@ -1,0 +1,58 @@
+@import "null-style";
+
+body {
+  padding: 30px;
+}
+
+$fz: 80px;
+
+@mixin fontz($f) {
+  font-size: $f;
+}
+
+.tplborder {
+  border-bottom: 5px dashed red;
+}
+
+.block {
+  font-size: 30px;
+  font-weight: 400;
+  background-color: grey;
+
+  span {
+    color: green;
+  }
+
+  .block__text {
+    font-size: $fz;
+  }
+}
+
+.block_big {
+  font-size: $fz;
+}
+
+.link {
+  font-size: $fz;
+  color: red;
+  text-decoration: underline;
+  transition: 1.5s;
+
+  .block & {
+    color: darkgreen;
+  }
+
+  &:hover {
+    color: yellow;
+  }
+}
+
+.link-2 {
+  @include fontz(150px);
+  @extend .tplborder;
+}
+
+hr {
+  border-bottom: 1px solid #333333;
+}
+
