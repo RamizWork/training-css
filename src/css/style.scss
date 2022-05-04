@@ -2,6 +2,7 @@
 
 body {
   font-family: "Arial";
+  min-width: 1170px;
 }
 
 .wrapper {
@@ -229,7 +230,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
-  flex: 1 1 auto;
+  flex: 1 1;
 }
 
 .vertical__text p {
